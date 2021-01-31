@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://UI/main_menu_animated.tscn" type="PackedScene" id=1]
+[ext_resource path="res://UI/main_menu_GUI.tscn" type="PackedScene" id=2]
+
+[node name="main_menu" type="Spatial"]
+
+[node name="main_menu" parent="." instance=ExtResource( 2 )]
+
+[node name="PlayLocal" type="Button" parent="main_menu"]
+visible = false
+margin_left = 405.0
+margin_top = 300.0
+margin_right = 607.0
+margin_bottom = 332.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayOnline" type="Button" parent="main_menu"]
+visible = false
+margin_left = 394.0
+margin_top = 346.0
+margin_right = 639.0
+margin_bottom = 375.0
+
+[node name="main_menu_animated" parent="." instance=ExtResource( 1 )]
